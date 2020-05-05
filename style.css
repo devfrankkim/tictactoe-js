@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #545454;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.container {
+  background: #14bdac;
+  border-radius: 25px;
+  margin: 50px;
+  padding: 50px;
+}
+
+.title {
+  text-align: center;
+  opacity: 0.9;
+}
+
+.competition {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.status-action {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.status span {
+  color: white;
+}
+
+.reset {
+  cursor: pointer;
+  user-select: none;
+}
+
+.reset:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+.game-grid {
+  background: #0e8074;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 8px;
+  margin-top: 40px;
+}
+
+.game-cell {
+  background: #14bdac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+}
+
+.x::after {
+  content: "×";
+  font-size: 130px;
+}
+
+.o::after {
+  content: "○";
+  color: #f2ebd3;
+  font-size: 170px;
+}
